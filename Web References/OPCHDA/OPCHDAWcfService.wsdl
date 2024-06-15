@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OPCHDAWcfService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/OPCHDAWCFService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOPCHDAServc_ReadRawValuesFromTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRawValuesFromTime" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_ReadRawValuesFromTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRawValuesFromTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_ReadRawValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRawValues" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_ReadRawValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRawValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_ReadRawValuesIncludeBounds_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRawValuesIncludeBounds" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_ReadRawValuesIncludeBounds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRawValuesIncludeBoundsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_GetOPCTags_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCTags" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_GetOPCTags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCTagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_DisconnectOPC_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectOPC" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_DisconnectOPC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectOPCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_GetOPCStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCStatus" />
+  </wsdl:message>
+  <wsdl:message name="IOPCHDAServc_GetOPCStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOPCHDAServc">
+    <wsdl:operation name="ReadRawValuesFromTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOPCHDAServc/ReadRawValuesFromTime" message="tns:IOPCHDAServc_ReadRawValuesFromTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOPCHDAServc/ReadRawValuesFromTimeResponse" message="tns:IOPCHDAServc_ReadRawValuesFromTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadRawValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOPCHDAServc/ReadRawValues" message="tns:IOPCHDAServc_ReadRawValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOPCHDAServc/ReadRawValuesResponse" message="tns:IOPCHDAServc_ReadRawValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadRawValuesIncludeBounds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOPCHDAServc/ReadRawValuesIncludeBounds" message="tns:IOPCHDAServc_ReadRawValuesIncludeBounds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOPCHDAServc/ReadRawValuesIncludeBoundsResponse" message="tns:IOPCHDAServc_ReadRawValuesIncludeBounds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOPCHDAServc/GetData" message="tns:IOPCHDAServc_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOPCHDAServc/GetDataResponse" message="tns:IOPCHDAServc_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCTags">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOPCHDAServc/GetOPCTags" message="tns:IOPCHDAServc_GetOPCTags_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOPCHDAServc/GetOPCTagsResponse" message="tns:IOPCHDAServc_GetOPCTags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisconnectOPC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOPCHDAServc/DisconnectOPC" message="tns:IOPCHDAServc_DisconnectOPC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOPCHDAServc/DisconnectOPCResponse" message="tns:IOPCHDAServc_DisconnectOPC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOPCHDAServc/GetOPCStatus" message="tns:IOPCHDAServc_GetOPCStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOPCHDAServc/GetOPCStatusResponse" message="tns:IOPCHDAServc_GetOPCStatus_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOPCHDAServc" type="tns:IOPCHDAServc">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadRawValuesFromTime">
+      <soap:operation soapAction="http://tempuri.org/IOPCHDAServc/ReadRawValuesFromTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadRawValues">
+      <soap:operation soapAction="http://tempuri.org/IOPCHDAServc/ReadRawValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadRawValuesIncludeBounds">
+      <soap:operation soapAction="http://tempuri.org/IOPCHDAServc/ReadRawValuesIncludeBounds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IOPCHDAServc/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCTags">
+      <soap:operation soapAction="http://tempuri.org/IOPCHDAServc/GetOPCTags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisconnectOPC">
+      <soap:operation soapAction="http://tempuri.org/IOPCHDAServc/DisconnectOPC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCStatus">
+      <soap:operation soapAction="http://tempuri.org/IOPCHDAServc/GetOPCStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OPCHDAWcfService">
+    <wsdl:port name="BasicHttpBinding_IOPCHDAServc" binding="tns:BasicHttpBinding_IOPCHDAServc">
+      <soap:address location="http://192.168.1.36:89/OPCHDAWcfService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

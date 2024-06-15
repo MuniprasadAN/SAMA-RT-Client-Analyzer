@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd3" filename="OPCHDAWcfService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd1" filename="OPCHDAWcfService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://192.168.1.36:89/OPCHDAWcfService.svc?wsdl" filename="OPCHDAWcfService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://192.168.1.36:89/OPCHDAWcfService.svc?disco" filename="OPCHDAWcfService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd2" filename="OPCHDAWcfService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://192.168.1.36:89/OPCHDAWcfService.svc?xsd=xsd0" filename="OPCHDAWcfService2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="OpcDaWcfSer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IOpcDaWcfSer_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <msf:Streamed xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+        </msf:Streamed>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/OpcDaWindowsService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCValue" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_ConnectToOPC_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectToOPC" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_ConnectToOPC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectToOPCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCServerName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCServerName" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCServerName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCServerNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCValues" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCValuesByTagsTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCValuesByTagsTime" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCValuesByTagsTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCValuesByTagsTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_WriteOPCValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteOPCValue" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_WriteOPCValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteOPCValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCTags_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCTags" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCTags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCTagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_DisconnectOPC_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectOPC" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_DisconnectOPC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectOPCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCStatus" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_GetOPCStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOPCStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_SetDontConnect_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDontConnect" />
+  </wsdl:message>
+  <wsdl:message name="IOpcDaWcfSer_SetDontConnect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDontConnectResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOpcDaWcfSer">
+    <wsdl:operation name="GetOPCValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCValue" message="tns:IOpcDaWcfSer_GetOPCValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCValueResponse" message="tns:IOpcDaWcfSer_GetOPCValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConnectToOPC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/ConnectToOPC" message="tns:IOpcDaWcfSer_ConnectToOPC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/ConnectToOPCResponse" message="tns:IOpcDaWcfSer_ConnectToOPC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCServerName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCServerName" message="tns:IOpcDaWcfSer_GetOPCServerName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCServerNameResponse" message="tns:IOpcDaWcfSer_GetOPCServerName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCValues" message="tns:IOpcDaWcfSer_GetOPCValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCValuesResponse" message="tns:IOpcDaWcfSer_GetOPCValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCValuesByTagsTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCValuesByTagsTime" message="tns:IOpcDaWcfSer_GetOPCValuesByTagsTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCValuesByTagsTimeResponse" message="tns:IOpcDaWcfSer_GetOPCValuesByTagsTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteOPCValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/WriteOPCValue" message="tns:IOpcDaWcfSer_WriteOPCValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/WriteOPCValueResponse" message="tns:IOpcDaWcfSer_WriteOPCValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCTags">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCTags" message="tns:IOpcDaWcfSer_GetOPCTags_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCTagsResponse" message="tns:IOpcDaWcfSer_GetOPCTags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisconnectOPC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/DisconnectOPC" message="tns:IOpcDaWcfSer_DisconnectOPC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/DisconnectOPCResponse" message="tns:IOpcDaWcfSer_DisconnectOPC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCStatus" message="tns:IOpcDaWcfSer_GetOPCStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/GetOPCStatusResponse" message="tns:IOpcDaWcfSer_GetOPCStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDontConnect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOpcDaWcfSer/SetDontConnect" message="tns:IOpcDaWcfSer_SetDontConnect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOpcDaWcfSer/SetDontConnectResponse" message="tns:IOpcDaWcfSer_SetDontConnect_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IOpcDaWcfSer" type="tns:IOpcDaWcfSer">
+    <wsp:PolicyReference URI="#NetTcpBinding_IOpcDaWcfSer_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetOPCValue">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/GetOPCValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConnectToOPC">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/ConnectToOPC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCServerName">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/GetOPCServerName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCValues">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/GetOPCValues" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCValuesByTagsTime">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/GetOPCValuesByTagsTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteOPCValue">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/WriteOPCValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCTags">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/GetOPCTags" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisconnectOPC">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/DisconnectOPC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOPCStatus">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/GetOPCStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDontConnect">
+      <soap12:operation soapAction="http://tempuri.org/IOpcDaWcfSer/SetDontConnect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OpcDaWcfSer">
+    <wsdl:port name="NetTcpBinding_IOpcDaWcfSer" binding="tns:NetTcpBinding_IOpcDaWcfSer">
+      <soap12:address location="net.tcp://127.0.0.1:32150/OpcDa/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://127.0.0.1:32150/OpcDa/</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

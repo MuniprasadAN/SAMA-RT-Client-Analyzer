@@ -1,0 +1,398 @@
+﻿++Solution 'SAMA Analyzer' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:SAMA Analyzer.sln
+++SAMA Analyzer
+i:{00000000-0000-0000-0000-000000000000}:SAMA Analyzer
+++Connected Services
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\connected services\
+++My Project
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\my project\
+++References
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++Web References
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\web references\
+++OPCHDA Query
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\
+++2.ico
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\2.ico
+++Add_SAMAHistoriantags.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\add_samahistoriantags.vb
+++AddOPC.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\addopc.vb
+++AddOpcItems.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\addopcitems.vb
+++Admospheric_Tank.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\admospheric_tank.vb
+++Agitator.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\agitator.vb
+++Annunciator_AudibleSetting.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\annunciator_audiblesetting.vb
+++Annunciator_ColorSetting.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\annunciator_colorsetting.vb
+++annunciatorAlarmstateClass.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\annunciatoralarmstateclass.vb
+++AnnunciatorCtrl.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\annunciatorctrl.vb
+++AnnunciatorPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\annunciatorpropertiesform.vb
+++app.config
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\app.config
+++ApplicationEvents.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\applicationevents.vb
+++AutoStartLocationForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\autostartlocationform.vb
+++Bin.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\bin.vb
+++Blower.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\blower.vb
+++BrowseOPCHDA.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\browseopchda.vb
+++BrowseOPCTags.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\browseopctags.vb
+++Button_Control.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\button_control.vb
+++buttonPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\buttonpropertiesform.vb
+++ChannelList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\channellist.vb
+++ChartControl.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\chartcontrol.vb
+++ChartInfo.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\chartinfo.vb
+++ChartProperties.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\chartproperties.vb
+++ChartPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\chartpropertiesform.vb
+++ChartSeriesTHValue.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\chartseriesthvalue.vb
+++Circuit_Breaker.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\circuit_breaker.vb
+++Compressor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\compressor.vb
+++ConnectOPCServer.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\connectopcserver.vb
+++ConnectServerForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\connectserverform.vb
+++ControlFactory.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\controlfactory.vb
+++Conveyor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\conveyor.vb
+++Cooling_Tower.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\cooling_tower.vb
+++Cyclone_Seperator.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\cyclone_seperator.vb
+++DataForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\dataform.vb
+++DataGridViewCtrl.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\datagridviewctrl.vb
+++DataGridViewPrinter.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\datagridviewprinter.vb
+++DBDataForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\dbdataform.vb
+++DBQueryForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\dbqueryform.vb
+++Delta_Connection.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\delta_connection.vb
+++DisplayvalueLabelPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\displayvaluelabelpropertiesform.vb
+++Distillation_Tower.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\distillation_tower.vb
+++DocumentSettings.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\documentsettings.vb
+++EditAnnuciator-AudibleSetting.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\editannuciator-audiblesetting.vb
+++EditUsersForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\editusersform.vb
+++EMailMessageForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\emailmessageform.vb
+++EMailSettingform.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\emailsettingform.vb
+++ErrorLogForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\errorlogform.vb
+++Evaporator.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\evaporator.vb
+++Exchanger.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\exchanger.vb
+++Finned_Exchanger.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\finned_exchanger.vb
+++FloatingRoof_Tank.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\floatingroof_tank.vb
+++Forced_Air_Exchanged.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\forced_air_exchanged.vb
+++Furnace.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\furnace.vb
+++Fuse.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\fuse.vb
+++GAS_Holder.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\gas_holder.vb
+++GridPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\gridpropertiesform.vb
+++GuageValueFromUser.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\guagevaluefromuser.vb
+++HDARedundancy.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\hdaredundancy.vb
+++IndicatorProperties.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\indicatorproperties.vb
+++Inline_Mixer.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\inline_mixer.vb
+++Jacketed_Vessel.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\jacketed_vessel.vb
+++LabelPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\labelpropertiesform.vb
+++LabelValue.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\labelvalue.vb
+++LevelIndicator.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\levelindicator.vb
+++LineElbow.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\lineelbow.vb
+++LinePropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\linepropertiesform.vb
+++Liquid_Filter.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\liquid_filter.vb
+++LogCtrlProperties.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\logctrlproperties.vb
+++LoginForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\loginform.vb
+++LogViewer.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\logviewer.vb
+++LogViewerDataGridViewPrinter.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\logviewerdatagridviewprinter.vb
+++LoingToDesignMode.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\loingtodesignmode.vb
+++MainPage.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\mainpage.vb
+++ManualContactor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\manualcontactor.vb
+++MChartControl.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\mchartcontrol.vb
+++MChartProperties.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\mchartproperties.vb
+++MChartPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\mchartpropertiesform.vb
+++MetricAnalyzerFlashScreen.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\metricanalyzerflashscreen.vb
+++Mill.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\mill.vb
+++Motor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\motor.vb
+++MultiTrendChartProperties.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\multitrendchartproperties.vb
+++MultiTrendCtrl.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\multitrendctrl.vb
+++OPC_ChaneelListForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opc_chaneellistform.vb
+++OPCChannelListClass.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcchannellistclass.vb
+++OPCDA ChannelsList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcda channelslist.vb
+++OPCDA_Servers.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcda_servers.vb
+++OPCDAChannelsList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcdachannelslist.vb
+++OPCDAServersList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcdaserverslist.vb
+++OPCHDA ChannelsList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda channelslist.vb
+++OPCHDA_Servers.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda_servers.vb
+++OPCHDAChannelsList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchdachannelslist.vb
+++OPCHDAServersList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchdaserverslist.vb
+++OPCServerlistForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcserverlistform.vb
+++OPCWriter.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcwriter.vb
+++OPCWriterControl.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcwritercontrol.vb
+++OPCWriterPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opcwriterpropertiesform.vb
+++packages.config
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\packages.config
+++PageProperties.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\pageproperties.vb
+++PanelPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\panelpropertiesform.vb
+++PicPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\picpropertiesform.vb
+++PressureStorage_Vessel.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\pressurestorage_vessel.vb
+++Pump.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\pump.vb
+++QueryOPCHDA.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\queryopchda.vb
+++Reactor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\reactor.vb
+++Reciprocating_Compressor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\reciprocating_compressor.vb
+++Redundancy.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\redundancy.vb
+++ResizeableControl.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\resizeablecontrol.vb
+++Roll_Stand.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\roll_stand.vb
+++Rotary_Feeder.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\rotary_feeder.vb
+++Rotary_Kiln.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\rotary_kiln.vb
+++Rotary_Seperator.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\rotary_seperator.vb
+++SAMAHistorianChannelDataform.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\samahistorianchanneldataform.vb
+++SAMAHistorianChannelList.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\samahistorianchannellist.vb
+++SAMAHistorianChannels.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\samahistorianchannels.vb
+++SAMAReports_Config.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\samareports_config.vb
+++Screw_Conveyor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\screw_conveyor.vb
+++SetCondition.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\setcondition.vb
+++Shape.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\shape.vb
+++Spray_Dryer.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\spray_dryer.vb
+++StateIndicator.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\stateindicator.vb
+++SupraAlarmClient.ico
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\supraalarmclient.ico
+++SupraDBChannelsListForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\supradbchannelslistform.vb
+++SwitchPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\switchpropertiesform.vb
+++SymbolPropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\symbolpropertiesform.vb
+++TaskScheduleClass.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\taskscheduleclass.vb
+++TaskSchedulerForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\taskschedulerform.vb
+++Transformer.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\transformer.vb
+++Trender.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\trender.vb
+++Turbine.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\turbine.vb
+++UpdateAnnunciatorColor.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\updateannunciatorcolor.vb
+++UsersForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\usersform.vb
+++Vacuum_Filter.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\vacuum_filter.vb
+++Valve.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\valve.vb
+++ValvePropertiesForm.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\valvepropertiesform.vb
+++Vessel.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\vessel.vb
+++Weigh_Hopper.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\weigh_hopper.vb
+++WYE_Connection.vb
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\wye_connection.vb
+++Accessibility
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++CefSharp
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++CefSharp.Core
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++CefSharp.WinForms
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++ChartGridControl
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.BonusSkins.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.Charts.v21.2.Core
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.Data.Desktop.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.Data.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.Printing.v21.2.Core
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.Utils.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.Utils.v21.2.UI
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraBars.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraCharts.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraCharts.v21.2.UI
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraCharts.v21.2.Wizard
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraEditors.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraGrid.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraLayout.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++DevExpress.XtraPrinting.v21.2
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++Microsoft.Office.Interop.Excel
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++NAudio
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++Newtonsoft.Json
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++OpcDaNet
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++SupraAnalyzerMeter
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Configuration
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Core
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Data
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Data.DataSetExtensions
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Deployment
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Drawing
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.EnterpriseServices
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Web.Extensions
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Web.Services
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Windows.Forms
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Windows.Forms.DataVisualization
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Windows.Forms.DataVisualization.Design
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Xml
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++System.Xml.Linq
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++ValidKey
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++ZedGraph
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:
+++OPCDA1
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\web references\opcda1\
+++OPCHDA
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\web references\opchda\
+++Scripts
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\scripts\
+++Styles
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\styles\
+++OPCHDAQuery.html
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\opchdaquery.html
+++dx.all.js
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\scripts\dx.all.js
+++globalize.min.js
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\scripts\globalize.min.js
+++jquery-2.1.3.min.js
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\scripts\jquery-2.1.3.min.js
+++dx.common.css
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\styles\dx.common.css
+++dx.light.css
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\styles\dx.light.css
+++dx.spa.css
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\styles\dx.spa.css
+++styles.css
+i:{2a0e791c-d29e-468e-a4b5-4a5595b1842c}:e:\aravinth\projects\sama rt client\opchda query\styles\styles.css

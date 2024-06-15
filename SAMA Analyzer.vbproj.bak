@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.props" Condition="Exists('packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.props')" />
+  <Import Project="packages\CefSharp.Common.65.0.0\build\CefSharp.Common.props" Condition="Exists('packages\CefSharp.Common.65.0.0\build\CefSharp.Common.props')" />
+  <Import Project="packages\cef.redist.x86.3.3325.1758\build\cef.redist.x86.props" Condition="Exists('packages\cef.redist.x86.3.3325.1758\build\cef.redist.x86.props')" />
+  <Import Project="packages\cef.redist.x64.3.3325.1758\build\cef.redist.x64.props" Condition="Exists('packages\cef.redist.x64.3.3325.1758\build\cef.redist.x64.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A0E791C-D29E-468E-A4B5-4A5595B1842C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SAMAAnalyzer.My.MyApplication</StartupObject>
+    <RootNamespace>SAMAAnalyzer</RootNamespace>
+    <AssemblyName>SAMARTClient</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>Off</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>2.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/AlarmMetricAnalyser/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SAMARTClient.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SAMARTClient.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SAMARTClient.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>SAMARTClient.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="ChartGridControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChartGridControl.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.UI, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="NAudio, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.1.9.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcDaNet, Version=8.5.1.0, Culture=neutral, PublicKeyToken=5b58a8d8b6f4763b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\OpcDaNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SupraAnalyzerMeter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\SupraAnalyzerMeter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft Chart Controls\Assemblies\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft Chart Controls\Assemblies\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ValidKey, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ValidKey.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOPC.Designer.vb">
+      <DependentUpon>AddOPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddOPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOpcItems.designer.vb">
+      <DependentUpon>AddOpcItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddOpcItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_SAMAHistoriantags.Designer.vb">
+      <DependentUpon>Add_SAMAHistoriantags.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add_SAMAHistoriantags.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admospheric_Tank.designer.vb">
+      <DependentUpon>Admospheric_Tank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admospheric_Tank.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agitator.designer.vb">
+      <DependentUpon>Agitator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agitator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="annunciatorAlarmstateClass.vb" />
+    <Compile Include="AnnunciatorPropertiesForm.Designer.vb">
+      <DependentUpon>AnnunciatorPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnnunciatorPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annunciator_AudibleSetting.Designer.vb">
+      <DependentUpon>Annunciator_AudibleSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annunciator_AudibleSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annunciator_ColorSetting.Designer.vb">
+      <DependentUpon>Annunciator_ColorSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annunciator_ColorSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Bin.designer.vb">
+      <DependentUpon>Bin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Blower.designer.vb">
+      <DependentUpon>Blower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Blower.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrowseOPCHDA.Designer.vb">
+      <DependentUpon>BrowseOPCHDA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseOPCHDA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnnunciatorCtrl.Designer.vb">
+      <DependentUpon>AnnunciatorCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnnunciatorCtrl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Connected Services\OPCDA1\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="EditAnnuciator-AudibleSetting.Designer.vb">
+      <DependentUpon>EditAnnuciator-AudibleSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditAnnuciator-AudibleSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb" />
+    <Compile Include="ManualContactor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MChartControl.Designer.vb">
+      <DependentUpon>MChartControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MChartControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MChartProperties.vb" />
+    <Compile Include="MChartPropertiesForm.Designer.vb">
+      <DependentUpon>MChartPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MChartPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MChartPropertiesFormNew.Designer.vb">
+      <DependentUpon>MChartPropertiesFormNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MChartPropertiesFormNew.vb" />
+    <Compile Include="QueryOPCHDA.Designer.vb">
+      <DependentUpon>QueryOPCHDA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QueryOPCHDA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseOPCTags.Designer.vb">
+      <DependentUpon>BrowseOPCTags.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseOPCTags.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buttonPropertiesForm.Designer.vb">
+      <DependentUpon>buttonPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buttonPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Button_Control.Designer.vb">
+      <DependentUpon>Button_Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Button_Control.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChannelList.vb" />
+    <Compile Include="ChartControl.Designer.vb">
+      <DependentUpon>ChartControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChartControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartInfo.Designer.vb">
+      <DependentUpon>ChartInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChartInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartProperties.vb" />
+    <Compile Include="ChartSeriesTHValue.vb" />
+    <Compile Include="Circuit_Breaker.designer.vb">
+      <DependentUpon>Circuit_Breaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Circuit_Breaker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compressor.designer.vb">
+      <DependentUpon>Compressor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compressor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConnectOPCServer.Designer.vb">
+      <DependentUpon>ConnectOPCServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectOPCServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectServerForm.Designer.vb">
+      <DependentUpon>ConnectServerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectServerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlFactory.vb" />
+    <Compile Include="Conveyor.designer.vb">
+      <DependentUpon>Conveyor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Conveyor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cooling_Tower.designer.vb">
+      <DependentUpon>Cooling_Tower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cooling_Tower.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cyclone_Seperator.designer.vb">
+      <DependentUpon>Cyclone_Seperator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cyclone_Seperator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataForm.Designer.vb">
+      <DependentUpon>DataForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartPropertiesForm.Designer.vb">
+      <DependentUpon>ChartPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChartPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewCtrl.Designer.vb">
+      <DependentUpon>DataGridViewCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewCtrl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewPrinter.vb" />
+    <Compile Include="DBDataForm.Designer.vb">
+      <DependentUpon>DBDataForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBDataForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBQueryForm.Designer.vb">
+      <DependentUpon>DBQueryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBQueryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delta_Connection.designer.vb">
+      <DependentUpon>Delta_Connection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delta_Connection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayvalueLabelPropertiesForm.Designer.vb">
+      <DependentUpon>DisplayvalueLabelPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayvalueLabelPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Distillation_Tower.designer.vb">
+      <DependentUpon>Distillation_Tower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Distillation_Tower.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocumentSettings.Designer.vb">
+      <DependentUpon>DocumentSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUsersForm.designer.vb">
+      <DependentUpon>EditUsersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditUsersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMailMessageForm.Designer.vb">
+      <DependentUpon>EMailMessageForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMailMessageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMailSettingform.Designer.vb">
+      <DependentUpon>EMailSettingform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMailSettingform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorLogForm.Designer.vb">
+      <DependentUpon>ErrorLogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaporator.designer.vb">
+      <DependentUpon>Evaporator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Evaporator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exchanger.designer.vb">
+      <DependentUpon>Exchanger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exchanger.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finned_Exchanger.designer.vb">
+      <DependentUpon>Finned_Exchanger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finned_Exchanger.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FloatingRoof_Tank.designer.vb">
+      <DependentUpon>FloatingRoof_Tank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingRoof_Tank.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forced_Air_Exchanged.designer.vb">
+      <DependentUpon>Forced_Air_Exchanged.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forced_Air_Exchanged.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Furnace.designer.vb">
+      <DependentUpon>Furnace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Furnace.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fuse.designer.vb">
+      <DependentUpon>Fuse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fuse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GAS_Holder.designer.vb">
+      <DependentUpon>GAS_Holder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GAS_Holder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridPropertiesForm.Designer.vb">
+      <DependentUpon>GridPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GridPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HDARedundancy.vb" />
+    <Compile Include="IndicatorProperties.designer.vb">
+      <DependentUpon>IndicatorProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IndicatorProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inline_Mixer.designer.vb">
+      <DependentUpon>Inline_Mixer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inline_Mixer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Jacketed_Vessel.designer.vb">
+      <DependentUpon>Jacketed_Vessel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jacketed_Vessel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelPropertiesForm.Designer.vb">
+      <DependentUpon>LabelPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LabelPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabelValue.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LevelIndicator.designer.vb">
+      <DependentUpon>LevelIndicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LevelIndicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LineElbow.designer.vb">
+      <DependentUpon>LineElbow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LineElbow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LinePropertiesForm.Designer.vb">
+      <DependentUpon>LinePropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LinePropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liquid_Filter.designer.vb">
+      <DependentUpon>Liquid_Filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Liquid_Filter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogCtrlProperties.Designer.vb">
+      <DependentUpon>LogCtrlProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogCtrlProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogViewer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogViewerDataGridViewPrinter.vb" />
+    <Compile Include="LoingToDesignMode.Designer.vb">
+      <DependentUpon>LoingToDesignMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoingToDesignMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.vb">
+      <DependentUpon>MainPage.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuageValueFromUser.designer.vb">
+      <DependentUpon>GuageValueFromUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GuageValueFromUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetricAnalyzerFlashScreen.Designer.vb">
+      <DependentUpon>MetricAnalyzerFlashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MetricAnalyzerFlashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mill.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Motor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiTrendChartProperties.Designer.vb">
+      <DependentUpon>MultiTrendChartProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MultiTrendChartProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiTrendCtrl.Designer.vb">
+      <DependentUpon>MultiTrendCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MultiTrendCtrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OPCDA ChannelsList.Designer.vb">
+      <DependentUpon>OPCDA ChannelsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCDA ChannelsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCDAChannelsList.vb" />
+    <Compile Include="OPCDAServersList.vb" />
+    <Compile Include="OPCDA_Servers.Designer.vb">
+      <DependentUpon>OPCDA_Servers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCDA_Servers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCHDA ChannelsList.Designer.vb">
+      <DependentUpon>OPCHDA ChannelsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCHDA ChannelsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCHDAChannelsList.vb" />
+    <Compile Include="OPCHDAServersList.vb" />
+    <Compile Include="OPCHDA_Servers.Designer.vb">
+      <DependentUpon>OPCHDA_Servers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCHDA_Servers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCServerlistForm.designer.vb">
+      <DependentUpon>OPCServerlistForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCServerlistForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCWriter.Designer.vb">
+      <DependentUpon>OPCWriter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCWriter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCWriterControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OPCWriterPropertiesForm.Designer.vb">
+      <DependentUpon>OPCWriterPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCWriterPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPC_ChaneelListForm.Designer.vb">
+      <DependentUpon>OPC_ChaneelListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPC_ChaneelListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCChannelListClass.vb" />
+    <Compile Include="PageProperties.Designer.vb">
+      <DependentUpon>PageProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelPropertiesForm.Designer.vb">
+      <DependentUpon>PanelPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PicPropertiesForm.Designer.vb">
+      <DependentUpon>PicPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PicPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PressureStorage_Vessel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pump.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reactor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reciprocating_Compressor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Redundancy.vb" />
+    <Compile Include="ResizeableControl.vb" />
+    <Compile Include="Roll_Stand.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rotary_Feeder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rotary_Kiln.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rotary_Seperator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SAMAHistorianChannelDataform.Designer.vb">
+      <DependentUpon>SAMAHistorianChannelDataform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAMAHistorianChannelDataform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SAMAHistorianChannelList.vb" />
+    <Compile Include="SAMAHistorianChannels.Designer.vb">
+      <DependentUpon>SAMAHistorianChannels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAMAHistorianChannels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SAMAReports_Config.Designer.vb">
+      <DependentUpon>SAMAReports_Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAMAReports_Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screw_Conveyor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetCondition.Designer.vb">
+      <DependentUpon>SetCondition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetCondition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shape.vb" />
+    <Compile Include="AutoStartLocationForm.Designer.vb">
+      <DependentUpon>AutoStartLocationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoStartLocationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spray_Dryer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StateIndicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SupraDBChannelsListForm.Designer.vb">
+      <DependentUpon>SupraDBChannelsListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SupraDBChannelsListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SwitchPropertiesForm.Designer.vb">
+      <DependentUpon>SwitchPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymbolPropertiesForm.Designer.vb">
+      <DependentUpon>SymbolPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SymbolPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskScheduleClass.vb" />
+    <Compile Include="TaskSchedulerForm.Designer.vb">
+      <DependentUpon>TaskSchedulerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TaskSchedulerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transformer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Trender.Designer.vb">
+      <DependentUpon>Trender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trender.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Turbine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateAnnunciatorColor.Designer.vb">
+      <DependentUpon>UpdateAnnunciatorColor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAnnunciatorColor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersForm.designer.vb">
+      <DependentUpon>UsersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UsersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum_Filter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Valve.designer.vb">
+      <DependentUpon>Valve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Valve.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ValvePropertiesForm.Designer.vb">
+      <DependentUpon>ValvePropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ValvePropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vessel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Web References\OPCHDA\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Weigh_Hopper.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WYE_Connection.designer.vb">
+      <DependentUpon>WYE_Connection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WYE_Connection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddOPC.resx">
+      <DependentUpon>AddOPC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOpcItems.resx">
+      <DependentUpon>AddOpcItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_SAMAHistoriantags.resx">
+      <DependentUpon>Add_SAMAHistoriantags.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admospheric_Tank.resx">
+      <DependentUpon>Admospheric_Tank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnnunciatorPropertiesForm.resx">
+      <DependentUpon>AnnunciatorPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annunciator_AudibleSetting.resx">
+      <DependentUpon>Annunciator_AudibleSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annunciator_ColorSetting.resx">
+      <DependentUpon>Annunciator_ColorSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseOPCHDA.resx">
+      <DependentUpon>BrowseOPCHDA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnnunciatorCtrl.resx">
+      <DependentUpon>AnnunciatorCtrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewCtrl.resx">
+      <DependentUpon>DataGridViewCtrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAnnuciator-AudibleSetting.resx">
+      <DependentUpon>EditAnnuciator-AudibleSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MChartPropertiesForm.resx">
+      <DependentUpon>MChartPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MChartPropertiesFormNew.resx">
+      <DependentUpon>MChartPropertiesFormNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="QueryOPCHDA.resx">
+      <DependentUpon>QueryOPCHDA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseOPCTags.resx">
+      <DependentUpon>BrowseOPCTags.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buttonPropertiesForm.resx">
+      <DependentUpon>buttonPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartInfo.resx">
+      <DependentUpon>ChartInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Circuit_Breaker.resx">
+      <DependentUpon>Circuit_Breaker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectOPCServer.resx">
+      <DependentUpon>ConnectOPCServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectServerForm.resx">
+      <DependentUpon>ConnectServerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForm.resx">
+      <DependentUpon>DataForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartPropertiesForm.resx">
+      <DependentUpon>ChartPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDataForm.resx">
+      <DependentUpon>DBDataForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBQueryForm.resx">
+      <DependentUpon>DBQueryForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayvalueLabelPropertiesForm.resx">
+      <DependentUpon>DisplayvalueLabelPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSettings.resx">
+      <DependentUpon>DocumentSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUsersForm.resx">
+      <DependentUpon>EditUsersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMailMessageForm.resx">
+      <DependentUpon>EMailMessageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMailSettingform.resx">
+      <DependentUpon>EMailSettingform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorLogForm.resx">
+      <DependentUpon>ErrorLogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPropertiesForm.resx">
+      <DependentUpon>GridPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndicatorProperties.resx">
+      <DependentUpon>IndicatorProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelPropertiesForm.resx">
+      <DependentUpon>LabelPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineElbow.resx">
+      <DependentUpon>LineElbow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinePropertiesForm.resx">
+      <DependentUpon>LinePropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liquid_Filter.resx">
+      <DependentUpon>Liquid_Filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogCtrlProperties.resx">
+      <DependentUpon>LogCtrlProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoingToDesignMode.resx">
+      <DependentUpon>LoingToDesignMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuageValueFromUser.resx">
+      <DependentUpon>GuageValueFromUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetricAnalyzerFlashScreen.resx">
+      <DependentUpon>MetricAnalyzerFlashScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiTrendChartProperties.resx">
+      <DependentUpon>MultiTrendChartProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiTrendCtrl.resx">
+      <DependentUpon>MultiTrendCtrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCDA ChannelsList.resx">
+      <DependentUpon>OPCDA ChannelsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCDA_Servers.resx">
+      <DependentUpon>OPCDA_Servers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCHDA ChannelsList.resx">
+      <DependentUpon>OPCHDA ChannelsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCHDA_Servers.resx">
+      <DependentUpon>OPCHDA_Servers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCServerlistForm.resx">
+      <DependentUpon>OPCServerlistForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCWriter.resx">
+      <DependentUpon>OPCWriter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCWriterPropertiesForm.resx">
+      <DependentUpon>OPCWriterPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPC_ChaneelListForm.resx">
+      <DependentUpon>OPC_ChaneelListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageProperties.resx">
+      <DependentUpon>PageProperties.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelPropertiesForm.resx">
+      <DependentUpon>PanelPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PicPropertiesForm.resx">
+      <DependentUpon>PicPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoStartLocationForm.resx">
+      <DependentUpon>AutoStartLocationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAMAHistorianChannelDataform.resx">
+      <DependentUpon>SAMAHistorianChannelDataform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAMAHistorianChannels.resx">
+      <DependentUpon>SAMAHistorianChannels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAMAReports_Config.resx">
+      <DependentUpon>SAMAReports_Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetCondition.resx">
+      <DependentUpon>SetCondition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupraDBChannelsListForm.resx">
+      <DependentUpon>SupraDBChannelsListForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwitchPropertiesForm.resx">
+      <DependentUpon>SwitchPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SymbolPropertiesForm.resx">
+      <DependentUpon>SymbolPropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskSchedulerForm.resx">
+      <DependentUpon>TaskSchedulerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trender.resx">
+      <DependentUpon>Trender.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAnnunciatorColor.resx">
+      <DependentUpon>UpdateAnnunciatorColor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersForm.resx">
+      <DependentUpon>UsersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValvePropertiesForm.resx">
+      <DependentUpon>ValvePropertiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYE_Connection.resx">
+      <DependentUpon>WYE_Connection.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\OPCDA1\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\OPCDA1\OpcDaWindowsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\OPCDA1\SAMAAnalyzer.OPCDA1.Tgs1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\OPCDA1\service.wsdl" />
+    <None Include="Connected Services\OPCDA1\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\OPCDA1\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\AnalyzerMeter.AGauge.datasource" />
+    <None Include="My Project\DataSources\Form1.datasource" />
+    <None Include="My Project\DataSources\GetValueFromUser.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web References\OPCHDA\OPCHDAWcfService.wsdl" />
+    <None Include="Web References\OPCHDA\OPCHDAWcfService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OPCHDA\OPCHDAWcfService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OPCHDA\OPCHDAWcfService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OPCHDA\OPCHDAWcfService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OPCHDA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\OPCHDA\Tgs.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2.ico" />
+    <None Include="Connected Services\OPCDA1\configuration91.svcinfo" />
+    <None Include="Connected Services\OPCDA1\configuration.svcinfo" />
+    <None Include="Connected Services\OPCDA1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="OPCHDA Query\OPCHDAQuery.html" />
+    <Content Include="OPCHDA Query\Scripts\dx.all.js" />
+    <Content Include="OPCHDA Query\Scripts\globalize.min.js" />
+    <Content Include="OPCHDA Query\Scripts\jquery-2.1.3.min.js" />
+    <Content Include="OPCHDA Query\Styles\dx.common.css" />
+    <Content Include="OPCHDA Query\Styles\dx.light.css" />
+    <Content Include="OPCHDA Query\Styles\dx.spa.css" />
+    <Content Include="OPCHDA Query\Styles\styles.css" />
+    <Content Include="SupraAlarmClient.ico" />
+    <None Include="Web References\OPCHDA\OPCHDAWcfService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.36:89/OPCHDAWcfservice.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OPCHDA\</RelPath>
+      <UpdateFromURL>http://192.168.1.36:89/OPCHDAWcfservice.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SAMARTClient_OPCHDA_OPCHDAWcfService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\OPCDA1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\cef.redist.x64.3.3325.1758\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\cef.redist.x64.3.3325.1758\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('packages\cef.redist.x86.3.3325.1758\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\cef.redist.x86.3.3325.1758\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('packages\CefSharp.Common.65.0.0\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CefSharp.Common.65.0.0\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('packages\CefSharp.Common.65.0.0\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CefSharp.Common.65.0.0\build\CefSharp.Common.targets'))" />
+    <Error Condition="!Exists('packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.props'))" />
+    <Error Condition="!Exists('packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.targets'))" />
+  </Target>
+  <Import Project="packages\CefSharp.Common.65.0.0\build\CefSharp.Common.targets" Condition="Exists('packages\CefSharp.Common.65.0.0\build\CefSharp.Common.targets')" />
+  <Import Project="packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.targets" Condition="Exists('packages\CefSharp.WinForms.65.0.0\build\CefSharp.WinForms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
